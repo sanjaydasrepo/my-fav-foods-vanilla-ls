@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favourate Food List</title>
+  <link rel="stylesheet" type="text/css" href="food-list.css">
+</head>
+<body>
+  <div class="container">
+    <div>
+      <h1>My Favourate Food List</h1>
+    </div>
+    <table id="foodTable">
+      <thead>
+        <tr>
+          <th>Food Name</th>
+          <th>Ingredients</th>
+          <th>Cost</th>
+          <th>Favorite Rating</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr onclick="showDetails(this)">
+          <td>Pizza</td>
+          <td>Dough, Tomato Sauce, Cheese, Toppings</td>
+          <td>Rs 250</td>
+          <td>4.5</td>
+          <td><img src="/images/pizza.jpg" alt="Pizza"></td>
+        </tr>
+        <tr onclick="showDetails(this)">
+          <td>Momo</td>
+          <td>Chicken , cabbage , cheese</td>
+          <td>Rs 120</td>
+          <td>4.2</td>
+          <td><img src="/images/momo.jpg" alt="Burger"></td>
+        </tr>
+        <tr onclick="showDetails(this)">
+          <td>Naan with Chicken butter masala</td>
+          <td>
+<ul>
+<li>500 grams boneless chicken, cut into cubes</li>
+<li>cup yogurt</li>
+<li>tablespoon ginger-garlic paste</li>
+<li>teaspoon red chili powder</li>
+<li>teaspoon turmeric powder</li>
+<li>Salt to taste</li>
+
+</ul>
+
+          </td>
+          <td>$15</td>
+          <td>4.8</td>
+          <td><img src="/images/chick.jpg" alt="Sushi"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="detailsContainer">
+      <h2>Food Details</h2>
+      <p id="foodName"></p>
+      <p id="ingredients"></p>
+      <p id="cost"></p>
+      <p id="rating"></p>
+      <img id="foodImage" src="" alt="">
+    </div>
+  </div>
+  <script src="food-list.js"></script>
+</body>
+</html>
